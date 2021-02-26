@@ -1,5 +1,5 @@
 * {
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* box-sizing: border-box; */
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #eee;
+    background: rgb(255, 255, 255);
 }
 
 h2 {
@@ -21,7 +21,8 @@ h2 {
 button {
     outline: none;
     margin: 10px 0 0 0;
-    border: 4px solid green;
+    border: 4px solid rgb(255, 180, 166);
+    border-radius: 5px;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -30,8 +31,14 @@ button {
 
 button:hover {
     cursor: pointer;
-    background: green;
+    background: rgb(255, 180, 166);
     color: white;
+}
+
+button:active {
+    background: rgb(250, 136, 165);
+    border: 4px solid rgb(250, 136, 165);
+
 }
 
 .play-area {
@@ -50,16 +57,16 @@ button:hover {
     justify-content: center;
     font-size: 3rem;
     font-weight: bold;
-    border: 3px solid black;
+    border: 3px solid rgb(134, 105, 69);
 }
 
 .block:hover {
     cursor: pointer;
-    background: rgb(217, 255, 195);
+    background: rgb(243, 232, 208);
 }
 
 .occupied:hover {
-    background: #ff3a3a;
+    background: #eb5b5b;
 }
 
 #box1, #box2, #box3 {
